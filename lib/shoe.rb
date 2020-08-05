@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     BRANDS.each do |brand|
       BRANDS << brand unless uniques.include?(x)
-      BRANDS << brand
+      
     end 
    
   end
