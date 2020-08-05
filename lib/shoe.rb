@@ -6,8 +6,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each {|brand| 
-    BRANDS << brand
+    BRANDS.each do |x|
+      BRANDS << x unless uniques.include?(x)
+    end 
+   
   end
 
   def cobble
